@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es"> 
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Encriptador de Texto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&family=Gentium+Plus&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+ 
+  <body>
+    <header>
+      <div class="titulo">
+        <h1>Encriptador y Desencriptador Alura Latam</h1>
+      </div>
+      <section class="encabezado">
+        <div class="logo">
+            <img class="imagen_alura" src="img/Logo.png" alt="imagen_alura">
+        </div>
+      </section>
+
+    </header>
+    <main>
+
+      <article>
+        <form id="botones_encriptar">
+          <div class="ingresar_texto">
+            <label for="textEncriptar"></label>
+            <textarea class="ingresar_texto_encriptador2" id="textEncriptar"  placeholder="Escriba el mensaje que será encriptado"></textarea>
+          </div>
+          <div class="exclamacion">
+            <img src="img/Vector.png" class="vector2" id="vector2">
+            <p class="solo_letras_minusculas">Solo letras minúsculas y sin acentos</p> 
+          </div>
+          <div id="botonNuevo">
+            <div class="botones">
+              <button class="encriptar" id="encriptar" name="encriptar"><p>Encriptar</p></button>
+              <button class="desencriptar" id="desencriptar" name="desencriptar"><p>Desencriptar</p></button>
+          </div>
+          </div>
+        </form>
+      </article>
+
+
+      <aside>
+        <section>
+          <form id="copiar">
+            <div  class="munheco-y-mensaje">
+              <textarea class="textoCopiar" id="tarea" type="text" readonly></textarea>
+              <button class="botonCopiar"><p>Copiar</p></button>
+             </div> 
+          </form>      
+        </section>
+      </aside>
+      
+    </main>
+
+    <footer>
+      <img src="img/candado.png" alt="candado_encriptar" class="candado" >
+      <p class="Copyright">&copy; Jefferson Isaza Cruz</p>
+    
+     <div class="redesSociales"> 
+            
+      <a href="https://www.linkedin.com/in/jefferson-isaza-cruz-891964243/" target="_blank"><img class="redes" src="img/Linkendli.png" alt="logo-LinkedLi"></a>
+
+     
+      <a href="https://twitter.com/JeffersonIsaza1" target="_blank"><img class="redes" src="img/twitter.png"  alt="twitter" ></a>
+
+      <a href="https://www.instagram.com/jefferson_isaza.cruz/" target="_blank"><img class="redes" src="img/Instagram.png" alt="Instagram"></a>
+
+      <a href="https://github.com/Isaza-01?tab=repositories" target="_blank"><img class="redes" src="img/repositorio.png" alt="logo-GitHub" ></a>
+
+     </div>
+       
+
+      
+
+    </footer>
+    <script src="js/encriptar.js"></script>
+    <script src="js/boton-copiar.js"></script>
+    <script src="js/desencriptar.js"></script>
+  </body>
+</html>
