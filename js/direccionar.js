@@ -11,7 +11,7 @@ var enlace= enviar.querySelector ("#dir");
 enlace.addEventListener ("click",function(){
     var link = enlace.querySelector ("a");
     link.classList.add("link");
-    link.setAttribute ("href","#textEncriptar");
+    link.setAttribute ("href","file:///C:/Users/Usuario/Documents/encriptador-alura/Encriptador-Alura/encriptador2.html#textEncriptar");
 });
 
 
