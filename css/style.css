@@ -1,20 +1,18 @@
-body {
+.caja-padre {
     font-family: 'Andika New Basic', sans-serif;
     font-family: 'Gentium Plus', serif;
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 1440px;
-    height: 1024px;
+    width: 1240px;
+    height: 824px;
     background: #F3F5FC;
-    border-left-color:linear-gradient( rgb(163, 163, 252),#F3F5FC) ;
+    
 }
 
-textarea::placeholder{
-    color: #c3cad2;
-}
+
 .titulo{
-    background: linear-gradient( rgb(163, 163, 252),#F3F5FC);
+    background: linear-gradient( rgb(8, 77, 110),#F3F5FC);
 	height: 3em;
 	color: rgb(40, 2, 117);
 	margin-bottom: 1em;
@@ -75,13 +73,16 @@ article{
     position: absolute;
     width: 577px;
     height: 48px;
-    left: 240px;
+    left: 140px;
     top: 168px;
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
     color: #0A3871;
     
+}
+textarea::placeholder{
+    color: #c3cad2;
 }
 
 .escribiendo {
@@ -103,7 +104,7 @@ article{
     position: absolute;
     width: 260px;
     height: 18px;
-    left: 240px;
+    left: 140px;
     top: 851px;
 }
 
@@ -123,9 +124,6 @@ article{
     padding: 0 10px;
     color: #495057;
     opacity: 0.8;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
 }
 
 .botones{ 
@@ -135,7 +133,7 @@ article{
     position: absolute;
     width: 680px;
     height: 67px;
-    left: 240px;
+    left: 140px;
     top: 885px;
 }
 
@@ -198,46 +196,61 @@ article{
     line-height: 19px;
     text-align: center;
     color: #0A3871;
-    flex: none;
-    order: 0;
-    flex-grow: 1;
 }
 
-aside{
-    flex: 1;
-    overflow-y: auto;
-    background: #F3F5FC;
-    border: 30px;
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: auto;
+
 }
 
-.imagen_munheco{
-    position: absolute;
-    width: 336px;
-    height: 304px;
-    top: 283px;
-    left: 32px;
-}
-
-.munheco-y-mensaje{
-    position: absolute;
+.caja-textoEncriptado{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column; 
     width: 400px;
-    height: 944px;
-    left: 1000px;
-    top: 40px;
+    height: 875px;
+    left: 830px;
+    top: 110px;
     background: #FFFFFF;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
 }
 
-.mensaje_munheco{
-    align-items: flex-start;
-    padding: 0px;
-    gap: 16px;
-    position: absolute;
+.caja-textoEncriptado-munheco{
+    display: flex;
+    justify-content: center;
     width: 336px;
-    height: 160px;
-    top: 619px;
-    left: 32px;
+    height: 304px; 
+}
+
+.munheco{
+   
+    
+}
+
+.caja-textoEncriptar-items-1{
+    width: 336px;
+    height: 58px;
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 120%;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.caja-textoEncriptar-items-2{
+    width: 336px;
+    height: 48px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    margin-top: 30px;
+    text-align: center;
+    color: #495057;
 }
 
 .invisible{
@@ -263,16 +276,9 @@ aside{
     font-size: 16px;
     line-height: 150%;
     color: #495057;
-    order: 1;
     text-align: center;
 }
 
-.mensaje-ingresar, .mensaje_ingresarTexto{
-    
-    flex: none;
-    align-self: stretch;
-    flex-grow: 0;
-}
 
 footer{
     width: 100%;
@@ -280,7 +286,7 @@ footer{
     position: absolute;
     top:1000px ;
     margin: 20px 0;
-    background: linear-gradient( #F3F5FC,rgb(163, 163, 252));
+    background: linear-gradient( to top, rgb(8, 77, 110) , #F3F5FC);
 }
 .Copyright{
     color: #354377;
@@ -339,18 +345,16 @@ footer{
 }
 
 .textoCopiar{
-    position: absolute;
+    display: flex;
+    margin-left: 25px;
     width: 336px;
-    height: 781px;
-    top: 10px;
-    margin: 0 30px;
+    height: 750px;
     font-weight: 400;
     font-size: 24px;
     line-height: 150%;
     color: #495057;
     resize:none ;
-    border:none ;
-    
+    border:none ; 
 }
 
 .textoCopiar:focus{
@@ -358,13 +362,9 @@ footer{
 }
 
 .botonCopiar{
-    align-items: flex-start;
-    padding: 24px;
-    gap: 8px;
-    position: absolute;
+
     width: 336px;
     height: 67px;
-    top: 847px;
     border: 1px solid #0A3871;
     border-radius: 24px;
     background: #FFFFFF;
@@ -379,7 +379,7 @@ footer{
 }
 
 .botonCopiar p{
-    width: 288px;
+    width: 100%;
     height: 19px;
     font-weight: 400;
     font-size: 20px;

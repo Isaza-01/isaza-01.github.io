@@ -12,7 +12,7 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
  
-  <body>
+  <body class="caja-padre">
     <header>
       <div class="titulo">
         <h1>Encriptador y Desencriptador Alura Latam</h1>
@@ -33,7 +33,7 @@
 
         <section >
           <div class="exclamacion">
-            <img src="img/Vector.png" class="vector2">
+            <img src="../Encriptador-Alura/img/Vector.png" class="vector2">
             <p class="solo_letras_minusculas">Solo letras minúsculas y sin acentos</p> 
           </div>
         </section>
@@ -46,20 +46,19 @@
       </article>
 
       <aside>
-        <section>
-          
-          <div  class="munheco-y-mensaje">
+        <div class="container">
+          <div class="caja-textoEncriptado">
             <div class="invisible">
-              <img src="img/Muñeco.png" class="imagen_munheco">
-                <div class="mensaje_munheco">
-                  <p class="mensaje-ingresar">Ningún mensaje fue encontrado</p><br><br>
-                  <p class="mensaje_ingresarTexto">Ingresa el texto que desees encriptar o desencriptar.</p>
-                </div> 
-            </div>   
-          </div>  
-          
-                
-        </section>
+              <div class="caja-textoEncriptado-munheco">
+                <img src="../Encriptador-Alura/img/Muñeco.png" alt="munheco alura" class="mnheco">
+              </div>
+              <div ><p class="caja-textoEncriptar-items-1">Ningún mensaje fue encontrado</p></div>
+              <div class="caja-textoEncriptar-items-2"><p>Ingresa el texto que desees encriptar o desencriptar.</p></div>
+            </div>
+          </div>
+        </div>
+        
+       
       </aside>
     </main>
 
@@ -88,3 +87,5 @@
     <script src="js/direccionar.js"></script>
   </body>
 </html>
+
+

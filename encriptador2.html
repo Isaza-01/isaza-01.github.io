@@ -10,9 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&family=Gentium+Plus&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
   </head>
  
-  <body>
+  <body class="caja-padre">
     <header>
       <div class="titulo">
         <h1>Encriptador y Desencriptador Alura Latam</h1>
@@ -22,64 +23,59 @@
             <img class="imagen_alura" src="img/Logo.png" alt="imagen_alura">
         </div>
       </section>
-
     </header>
-    <main>
+    <main class="objetos">
 
-      <article>
+      <article class="objetos_hijos">
         <form id="botones_encriptar">
           <div class="ingresar_texto">
-            <label for="textEncriptar"></label>
             <textarea class="ingresar_texto_encriptador2" id="textEncriptar"  placeholder="Escriba el mensaje que será encriptado"></textarea>
           </div>
-          <div class="exclamacion">
-            <img src="img/Vector.png" class="vector2" id="vector2">
-            <p class="solo_letras_minusculas">Solo letras minúsculas y sin acentos</p> 
-          </div>
-          <div id="botonNuevo">
-            <div class="botones">
-              <button class="encriptar" id="encriptar" name="encriptar"><p>Encriptar</p></button>
-              <button class="desencriptar" id="desencriptar" name="desencriptar"><p>Desencriptar</p></button>
-          </div>
+
+          <div class="seccion_botones_exclamacion">
+            <div class="exclamacion">
+              <img src="img/Vector.png" class="vector2" id="vector2">
+              <p class="solo_letras_minusculas">Solo letras minúsculas y sin acentos</p> 
+            </div>
+            <div id="botonNuevo">
+              <div class="botones">
+                <button class="encriptar" id="encriptar" name="encriptar"><p>Encriptar</p></button>
+                <button class="desencriptar" id="desencriptar" name="desencriptar"><p>Desencriptar</p></button>
+              </div>
+            </div>
           </div>
         </form>
       </article>
-
-
       <aside>
-        <section>
-          <form id="copiar">
-            <div  class="munheco-y-mensaje">
-              <textarea class="textoCopiar" id="tarea" type="text" readonly></textarea>
-              <button class="botonCopiar"><p>Copiar</p></button>
-             </div> 
-          </form>      
-        </section>
+        <div class="container">
+          <div class="caja-textoEncriptado">
+                <textarea class="textoCopiar" id="tarea" type="text" readonly></textarea>
+                <button class="botonCopiar"><p>Copiar</p></button>
+          </div>
+        </div>
       </aside>
-      
     </main>
 
     <footer>
-      <img src="img/candado.png" alt="candado_encriptar" class="candado" >
-      <p class="Copyright">&copy; Jefferson Isaza Cruz</p>
-    
-     <div class="redesSociales"> 
-            
-      <a href="https://www.linkedin.com/in/jefferson-isaza-cruz-891964243/" target="_blank"><img class="redes" src="img/Linkendli.png" alt="logo-LinkedLi"></a>
-
-     
-      <a href="https://twitter.com/JeffersonIsaza1" target="_blank"><img class="redes" src="img/twitter.png"  alt="twitter" ></a>
-
-      <a href="https://www.instagram.com/jefferson_isaza.cruz/" target="_blank"><img class="redes" src="img/Instagram.png" alt="Instagram"></a>
-
-      <a href="https://github.com/Isaza-01?tab=repositories" target="_blank"><img class="redes" src="img/repositorio.png" alt="logo-GitHub" ></a>
-
-     </div>
-       
-
+      <div class="rodapie">
+          <img src="img/candado.png" alt="candado_encriptar" class="candado" >
+          <p class="Copyright">&copy; Jefferson Isaza Cruz</p>
       
+          <div class="redesSociales"> 
+              
+            <a href="https://www.linkedin.com/in/jefferson-isaza-cruz-891964243/" target="_blank"><img class="redes" src="img/Linkendli.png" alt="logo-LinkedLi"></a>
 
+          
+            <a href="https://twitter.com/JeffersonIsaza1" target="_blank"><img class="redes" src="img/twitter.png"  alt="twitter" ></a>
+
+            <a href="https://www.instagram.com/jefferson_isaza.cruz/" target="_blank"><img class="redes" src="img/Instagram.png" alt="Instagram"></a>
+
+            <a href="https://github.com/Isaza-01?tab=repositories" target="_blank"><img class="redes" src="img/repositorio.png" alt="logo-GitHub" ></a>
+
+          </div>
+        </div>
     </footer>
+
     <script src="js/encriptar.js"></script>
     <script src="js/boton-copiar.js"></script>
     <script src="js/desencriptar.js"></script>
