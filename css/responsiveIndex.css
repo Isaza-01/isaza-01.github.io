@@ -2,7 +2,7 @@
     .caja-padre {
         display: flex;
         width: 768px;
-        height: 1500px;
+        height: 1200px;
     }
 
     header {
@@ -31,14 +31,14 @@
         position: absolute;
         width: 688px;
         height: 288px;
-        left: 40px;
-        top: 140px;
+        left: 90px;
+        top: 240px;
     }
 
     .botones {
         display: flex;
         flex-direction: row;
-        align-items: flex-start;
+        align-items: center;
         padding: 0px;
         gap: 24px;
 
@@ -46,7 +46,24 @@
         width: 688px;
         height: 67px;
         left: 70px;
-        top: 870px;
+        top: 770px;
+    }
+    
+    #botonPegar{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        margin-bottom: 0 10px;
+        width: 328px;
+        height: 67px;
+        left: 5px;
+        top: 74px;
+    }
+
+    #botonPegar p{
+        width: 70%;
+        text-align: center;
+        color: lightcoral;
     }
 
     .exclamacion {
@@ -59,7 +76,7 @@
         width: 229px;
         height: 18px;
         left: 70px;
-        top: 836px;
+        top: 736px;
     }
 
     .solo_letras_minusculas {
@@ -73,21 +90,41 @@
         flex-grow: 0;
     }
 
+    .container{
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
+    }
+
 
     .caja-textoEncriptado {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        justify-content: space-around;
         padding: 32px;
         gap: 32px;
         position: absolute;
-        width: 688px;
-        height: 343px;
-        left: 40px;
-        top: 1001px;
+        width: 668px;
+        height: 133px;
+        left: 30px;
+        top: 881px;
         background: #FFFFFF;
         box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
         border-radius: 32px;
+    }
+
+    .caja-textoEncriptado-munheco{
+        display: none;
+    }
+    .caja-textoEncriptar-items-1{
+        width: 624px;
+        height: 29px;
+    }
+
+    .caja-textoEncriptar-items-2{
+        width: 624px;
+        height: 24px;
     }
 
     .textoCopiar {
@@ -103,18 +140,40 @@
         height: 67px;
     }
 
-    footer {
-        top: 1470px;
+    footer, .rodapie {
+        align-items: center;
+        display: flex;
+        top: 1120px;
         width: 100%;
     }
+
+    .candado{
+        position: absolute;
+        left: 30px;
+        
+    }
+    .redes{
+        width: 5%;
+    }
+    
+    .Copyright{
+        margin:0;
+        left: 102px;
+        font-size: 2em;
+        
+    }
+
 }
+
+
+/* pantalla de 380px*/
 
 @media(max-width:380px) {
 
     .caja-padre {
         display: flex;
-        width: 380px;
-        height: 1900px;
+        width: 375px;
+        height: 933px;
     }
 
     header {
@@ -130,12 +189,12 @@
         text-align: center;
     }
 
-    .encabezado {
+    .encabezado, .logo, .imagen_alura{
         position: absolute;
-        width: 20.43px;
-        height: 38.03px;
-        left: 0px;
-        top: 93.97px;
+        left: 1%;
+        right: 87.2%;
+        top: 10%;
+        bottom: 25%;
     }
 
     .ingresar_texto_encriptador2,
@@ -143,8 +202,8 @@
         position: absolute;
         width: 343px;
         height: 624px;
-        left: 16px;
-        top: 100px;
+        left: 40px;
+        top: 190px;
     }
 
     textarea::placeholder {
@@ -161,7 +220,7 @@
         width: 229px;
         height: 18px;
         left: 16px;
-        top: 836px;
+        top: 451px;
     }
 
     .solo_letras_minusculas {
@@ -177,17 +236,18 @@
 
     .botones {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: flex-start;
         flex-wrap: wrap;
         justify-content: space-around;
+        justify-content: center;
         padding: 0px;
         gap: 24px;
         position: absolute;
         width: 85%;
         height: 158px;
         left: 16px;
-        top: 874px;
+        top: 485px;
     }
 
     .encriptar p,
@@ -220,38 +280,39 @@
 
     .caja-textoEncriptado {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         justify-content: space-around;
         padding: 32px;
         gap: 32px;
         position: absolute;
-        width: 70%;
-        height: 595px;
+        width: 80%;
+        height: 186px;
         left: 10px;
-        top: 1126px;
+        top: 707px;
         background: #FFFFFF;
         box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
         border-radius: 32px;
     }
 
-    .textoCopiar {
-        width: 279px;
-        height: 432px;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 150%;
+    .caja-textoEncriptar-items-1{
+        width: 263px;
+        height: 58px;
+
     }
 
-    .botonCopiar {
+    .caja-textoEncriptar-items-2{
+        width: 263px;
+        height: 48px;
+        font-weight: 400;
+        font-size: 20px;
+       
 
-        width: 279px;
-        height: 67px;
     }
 
     footer {
         display: flex;
-        top: 1770px;
+        top: 1000px;
         width: 369px;
         height: 100px;
     }
@@ -273,6 +334,7 @@
     
     .Copyright{
         margin:0;
+        font-size: 1rem;
         left: 63px;
         
     }

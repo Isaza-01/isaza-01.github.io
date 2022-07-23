@@ -1,0 +1,299 @@
+@media(max-width:768px) {
+    .caja-padre {
+        display: flex;
+        width: 768px;
+        height: 1500px;
+    }
+
+    header {
+        display: flex;
+    }
+
+    .titulo {
+        display: flex;
+    }
+
+    .titulo h1 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .imagen_alura {
+        position: absolute;
+        left: 5.21%;
+        right: 90.74%;
+        top: 80.42%;
+        bottom: 91.16%;
+    }
+
+    .ingresar_texto_encriptador2,
+    .ingresar_texto {
+        position: absolute;
+        width: 688px;
+        height: 288px;
+        left: 40px;
+        top: 140px;
+    }
+
+    .botones {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 24px;
+
+        position: absolute;
+        width: 688px;
+        height: 67px;
+        left: 70px;
+        top: 870px;
+    }
+    
+    #botonPegar{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        margin-bottom: 0 10px;
+        width: 328px;
+        height: 67px;
+        left: 5px;
+        top: 74px;
+    }
+
+    #botonPegar p{
+        width: 70%;
+        text-align: center;
+        color: lightcoral;
+    }
+
+    .exclamacion {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+        position: absolute;
+        width: 229px;
+        height: 18px;
+        left: 70px;
+        top: 836px;
+    }
+
+    .solo_letras_minusculas {
+        width: 205px;
+        height: 18px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+
+
+    .caja-textoEncriptado {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 32px;
+        gap: 32px;
+        position: absolute;
+        width: 688px;
+        height: 343px;
+        left: 40px;
+        top: 1081px;
+        background: #FFFFFF;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 32px;
+    }
+
+    .textoCopiar {
+        width: 624px;
+        height: 280px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 150%;
+    }
+
+    .botonCopiar {
+        width: 624px;
+        height: 67px;
+    }
+
+    footer {
+        top: 1520px;
+        width: 100%;
+    }
+}
+
+
+/* pantalla de 380px*/
+
+@media(max-width:380px) {
+
+    .caja-padre {
+        display: flex;
+        width: 380px;
+        height: 1900px;
+    }
+
+    header {
+        display: flex;
+    }
+
+    .titulo {
+        display: flex;
+    }
+
+    .titulo h1 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .encabezado {
+        position: absolute;
+        width: 20.43px;
+        height: 38.03px;
+        left: 0px;
+        top: 93.97px;
+    }
+
+    .ingresar_texto_encriptador2,
+    .ingresar_texto {
+        position: absolute;
+        width: 343px;
+        height: 624px;
+        left: 16px;
+        top: 100px;
+    }
+
+    textarea::placeholder {
+        font-size: 30px;
+    }
+
+    .exclamacion {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+        position: absolute;
+        width: 229px;
+        height: 18px;
+        left: 16px;
+        top: 836px;
+    }
+
+    .solo_letras_minusculas {
+        width: 205px;
+        height: 18px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+
+    .botones {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0px;
+        gap: 24px;
+        position: absolute;
+        width: 85%;
+        height: 158px;
+        left: 16px;
+        top: 874px;
+    }
+
+    .encriptar p,
+    .desencriptar p {
+        width: 95%;
+        text-align: center;
+    }
+
+    #botonPegar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        margin-bottom: 0 10px;
+        width: 95%;
+        height: 67px;
+        left: 16px;
+        top: 174px;
+    }
+
+    #botonPegar p{
+        width: 70%;
+        text-align: center;
+    }
+
+    .container{
+        justify-content: space-around;
+    }
+
+    .caja-textoEncriptado {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 32px;
+        gap: 32px;
+        position: absolute;
+        width: 70%;
+        height: 595px;
+        left: 10px;
+        top: 1126px;
+        background: #FFFFFF;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 32px;
+    }
+
+    .textoCopiar {
+        width: 279px;
+        height: 432px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 150%;
+    }
+
+    .botonCopiar {
+
+        width: 279px;
+        height: 67px;
+    }
+
+    footer {
+        display: flex;
+        top: 1770px;
+        width: 369px;
+        height: 100px;
+    }
+   
+    .rodapie, .candado, .Copyright{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .candado{
+        position: absolute;
+        left: 5px;
+        
+    }
+    .redes{
+        width: 5%;
+    }
+    
+    .Copyright{
+        margin:0;
+        left: 63px;
+        
+    }
+}
